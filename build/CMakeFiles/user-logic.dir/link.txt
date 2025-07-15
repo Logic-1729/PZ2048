@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic "CMakeFiles/user-logic.dir/src/user_logic_test.o" "CMakeFiles/user-logic.dir/src/user_logic.o" "CMakeFiles/user-logic.dir/src/game_logic.o" "CMakeFiles/user-logic.dir/src/utils.o" -o user-logic 

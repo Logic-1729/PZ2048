@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/server.dir/src/server.o CMakeFiles/server.dir/src/game_logic.o CMakeFiles/server.dir/src/user_logic.o CMakeFiles/server.dir/src/utils.o -o server 
