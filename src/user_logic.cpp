@@ -18,16 +18,17 @@ namespace PZ2048 {
 // After all, the game logic on the online judger won't contain extern variables same as yours.
 
 void ClientPrepare(int row_num, int col_num) {
-  /** implement here. **/
+    /** implement here. **/
 }
 
 void ReadBoard() {
-  /** implement here. **/
+    /** implement here. **/
+    /** Hint: You MUST USE std:cin **/
 }
 
 char Decide() {
-  /** implement here. **/
-  return 'w';
+    /** implement here. **/
+    return 'w';
 }
 
 

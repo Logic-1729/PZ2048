@@ -9,36 +9,36 @@
 using namespace PZ2048;
 
 void SingleTest() {
-  int row_num, col_num;
-  uint seed;
-  int target = 2048;
-  std::cin >> row_num >> col_num >> seed;
+    int row_num, col_num;
+    uint seed;
+    int target = 2048;
+    std::cin >> row_num >> col_num >> seed;
 
-  ClientPrepare(row_num, col_num);
-  Start(row_num, col_num, target, seed);
-  while(true) {
+    ClientPrepare(row_num, col_num);
+    Start(row_num, col_num, target, seed);
+    while(true) {
 
-    std::ostringstream oss;
-    auto *obuf = std::cout.rdbuf(oss.rdbuf()); // redirect std::cout.
+        std::ostringstream oss;
+        auto *obuf = std::cout.rdbuf(oss.rdbuf()); // redirect std::cout.
 
-    PrintBoard();
+        PrintBoard();
 
-    std::istringstream iss(oss.str());
-    std::cout.rdbuf(obuf);                     // reset std:cout.
-    auto *ibuf = std::cin.rdbuf(iss.rdbuf());  // redirect std::cin.
+        std::istringstream iss(oss.str());
+        std::cout.rdbuf(obuf);                     // reset std:cout.
+        auto *ibuf = std::cin.rdbuf(iss.rdbuf());  // redirect std::cin.
 
-    ReadBoard();                               // read what PrintBoard() has output.
+        ReadBoard();                               // read what PrintBoard() has output.
 
-    std::cin.rdbuf(ibuf);                      // reset std::cin.
+        std::cin.rdbuf(ibuf);                      // reset std::cin.
 
-    char oper = Decide();
-    // must be a valid move. No undo allowed. No Steins-Gate.
-    if(oper != 'w' && oper != 's' && oper != 'a' && oper != 'd') {
-      std::cout << " Invalid Operation.\n";
-      continue;
-    }
+        char oper = Decide();
+        // must be a valid move. No undo allowed. No Steins-Gate.
+        if(oper != 'w' && oper != 's' && oper != 'a' && oper != 'd') {
+            std::cout << " Invalid Operation.\n";
+            continue;
+        }
 
-    TryRun(oper);
+        TryRun(oper);
 
     /*
     if(flag) {

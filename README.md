@@ -69,41 +69,7 @@ PZ2048/
 
 ## 基础任务
 
-在这一部分，你需要实现通行版规则中电脑端 C 所要扮演的角色。为了方便我们在 `ACMOJ`上提交，我们对规则生成机制进行了一些修改，比如引入了随机数种子，引入了撤销机制（上限一次），不再限制2048的棋盘为 4 \* 4等等。总体来说，我们需要实现`game_logic.cpp`中的以下函数，具体功能详见`game_logic.h`.
-
-```
-void Start(int row_num, int col_num, int target, uint game_seed) {
-  /** implement here. **/
-}
-
-bool TryRun(char dir) {
- /** implement here. **/
-}
-
-void SetTile(int row_index, int col_index, int value) {
-  /** implement here. **/
-}
-
-int GetTile(int row_index, int col_index) {
-  /** implement here. **/
-}
-
-bool HasReachedTarget() {
-  /** implement here. **/
-}
-
-bool Stuck() {
-  /** implementation here **/
-}
-
-void PrintBoard() {
- /** implement here. **/
-}
-
-bool Undo() {
-  /** implement here. **/
-}
-```
+在这一部分，你需要实现通行版规则中电脑端 C 所要扮演的角色。为了方便我们在 `ACMOJ`上提交，我们对规则生成机制进行了一些修改，比如引入了随机数种子，引入了撤销机制（上限一次），不再限制2048的棋盘为 4 \* 4等等。总体来说，我们需要实现`game_logic.cpp`中的所有函数，具体功能详见`game_logic.h`与`game_logic.cpp`.
 
 ## 拓展任务
 
@@ -158,7 +124,7 @@ cd web
 python3 -m http.server 8000
 ```
 
-然后打开浏览器，输入网址 `python3 -m http.server 8000`,你就能够看到你的程序在网页端生成的效果；可以通过这种方式对你的程序直观进行调试与游玩。
+然后打开浏览器，输入网址 `http://localhost:8000/`,你就能够看到你的程序在网页端生成的效果；可以通过这种方式对你的程序直观进行调试与游玩。
 
 同时我们在下发的`testcase`文件中提供了部分样例供各位调试,请你在完成 `game_logic.cpp` 后，打开 wsl 的根目录，依次执行以下命令：
 

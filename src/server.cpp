@@ -8,56 +8,56 @@
 #include "crow/middlewares/cors.h"
 
 int main() {
-    crow::App<crow::CORSHandler> app;
+        crow::App<crow::CORSHandler> app;
 
-    auto& cors = app.get_middleware<crow::CORSHandler>();
-    cors
-        .global()
-        .origin("*")
-        .methods("POST"_method)
-        .methods("GET"_method)
-        .methods("OPTIONS"_method)
-        .headers("Content-Type")
-        .max_age(86400);
+        auto& cors = app.get_middleware<crow::CORSHandler>();
+        cors
+            .global()
+            .origin("*")
+            .methods("POST"_method)
+            .methods("GET"_method)
+            .methods("OPTIONS"_method)
+            .headers("Content-Type")
+            .max_age(86400);
 
-    app.port(18080).multithreaded();
+        app.port(18080).multithreaded();
 
-    CROW_ROUTE(app, "/")([](){
-        crow::response res("Hello from C++ 2048 Backend!");
-        return res;
-    });
+        CROW_ROUTE(app, "/")([](){
+            crow::response res("Hello from C++ 2048 Backend!");
+            return res;
+        });
 
-    CROW_ROUTE(app, "/init")
-    .methods("POST"_method)([&](const crow::request& req){
-        crow::json::rvalue request_body_json;
-        int rows = 4;
-        int cols = 4;
-        int target_tile = 2048;
-        unsigned int user_provided_seed = 0;
+        CROW_ROUTE(app, "/init")
+        .methods("POST"_method)([&](const crow::request& req){
+            crow::json::rvalue request_body_json;
+            int rows = 4;
+            int cols = 4;
+            int target_tile = 2048;
+            unsigned int user_provided_seed = 0;
 
-        try {
-            request_body_json = crow::json::load(req.body);
-            if (request_body_json.has("rows") && request_body_json["rows"].t() == crow::json::type::Number) {
-                rows = static_cast<int>(request_body_json["rows"].d());
+            try {
+                request_body_json = crow::json::load(req.body);
+                if (request_body_json.has("rows") && request_body_json["rows"].t() == crow::json::type::Number) {
+                    rows = static_cast<int>(request_body_json["rows"].d());
+                }
+                if (request_body_json.has("cols") && request_body_json["cols"].t() == crow::json::type::Number) {
+                    cols = static_cast<int>(request_body_json["cols"].d());
+                }
+                if (request_body_json.has("target_tile") && request_body_json["target_tile"].t() == crow::json::type::Number) {
+                    target_tile = static_cast<int>(request_body_json["target_tile"].d());
+                }
+                if (request_body_json.has("seed") && request_body_json["seed"].t() == crow::json::type::Number) {
+                    user_provided_seed = static_cast<unsigned int>(request_body_json["seed"].d());
+                }
+            } catch (const std::runtime_error& e) {
             }
-            if (request_body_json.has("cols") && request_body_json["cols"].t() == crow::json::type::Number) {
-                cols = static_cast<int>(request_body_json["cols"].d());
-            }
-            if (request_body_json.has("target_tile") && request_body_json["target_tile"].t() == crow::json::type::Number) {
-                target_tile = static_cast<int>(request_body_json["target_tile"].d());
-            }
-            if (request_body_json.has("seed") && request_body_json["seed"].t() == crow::json::type::Number) {
-                user_provided_seed = static_cast<unsigned int>(request_body_json["seed"].d());
-            }
-        } catch (const std::runtime_error& e) {
-        }
 
-        rows = std::max(1, std::min(10, rows));
-        cols = std::max(1, std::min(10, cols));
+            rows = std::max(1, std::min(10, rows));
+            cols = std::max(1, std::min(10, cols));
 
-        PZ2048::Start(rows, cols, target_tile, user_provided_seed);
+            PZ2048::Start(rows, cols, target_tile, user_provided_seed);
 
-        crow::json::wvalue response_json;
+            crow::json::wvalue response_json;
         response_json["message"] = "Game initialized successfully!";
         response_json["board"] = PZ2048::SerializeBoard();
         response_json["score"] = PZ2048::Score();

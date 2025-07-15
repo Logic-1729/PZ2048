@@ -11,25 +11,25 @@ using namespace PZ2048;
 void PrintBoardToStream(std::ostream &os);
 
 void check_target(int &target) {
-  if(target <= 4) {
-    target = 8;
-    std::cout << "Target too low. Automatically changed target to 8.\n";
-    return;
-  }
-  if(target > 8192) {
-    target = 8192;
-    std::cout << "Target too large. Automatically changed target to 8192.\n";
-    return;
-  }
-  int cnt = 0, tmp = target;
-  while(tmp > 0) {
-    cnt++;
-    tmp >>= 1;
-  }
-  if(target != (1 << (cnt - 1))) {
-    target = 1 << cnt;
-    std::cout << "Target is not a power of 2. Automatically changed target to " << target << ".\n";
-  }
+    if(target <= 4) {
+        target = 8;
+        std::cout << "Target too low. Automatically changed target to 8.\n";
+        return;
+    }
+    if(target > 8192) {
+        target = 8192;
+        std::cout << "Target too large. Automatically changed target to 8192.\n";
+        return;
+    }
+    int cnt = 0, tmp = target;
+    while(tmp > 0) {
+        cnt++;
+        tmp >>= 1;
+    }
+    if(target != (1 << (cnt - 1))) {
+        target = 1 << cnt;
+        std::cout << "Target is not a power of 2. Automatically changed target to " << target << ".\n";
+    }
 }
 
 int main() {

@@ -6,13 +6,13 @@ namespace PZ2048 {
 /**
  * Inform the client with the board params of the game.
  */
-void ClientPrepare(int row_num, int col_num);
+    void ClientPrepare(int row_num, int col_num);
 
 /**
  * Read in the current board from stdin.
  * The data format is the same with your PrintBoard() in server.h.
  */
-void ReadBoard();
+    void ReadBoard();
 
 // Dir Decide();
 
@@ -21,7 +21,7 @@ void ReadBoard();
  * Undo is considered invalid, preventing from randomness.
  * @return a character among 'w', 's', 'a' and 'd'.
  */
-char Decide();
+    char Decide();
 
 }
 
