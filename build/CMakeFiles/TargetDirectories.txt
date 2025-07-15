@@ -1,0 +1,6 @@
+/home/logic/2048Puzzle/build/CMakeFiles/user-logic.dir
+/home/logic/2048Puzzle/build/CMakeFiles/server.dir
+/home/logic/2048Puzzle/build/CMakeFiles/run_server.dir
+/home/logic/2048Puzzle/build/CMakeFiles/clean_server.dir
+/home/logic/2048Puzzle/build/CMakeFiles/edit_cache.dir
+/home/logic/2048Puzzle/build/CMakeFiles/rebuild_cache.dir
