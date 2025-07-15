@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/logic/2048Puzzle
+CMAKE_SOURCE_DIR = /home/logic/PZ2048
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/logic/2048Puzzle/build
+CMAKE_BINARY_DIR = /home/logic/PZ2048/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -70,60 +70,60 @@ include CMakeFiles/server.dir/progress.make
 include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/src/server.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/server.o: /home/logic/2048Puzzle/src/server.cpp
+CMakeFiles/server.dir/src/server.o: /home/logic/PZ2048/src/server.cpp
 CMakeFiles/server.dir/src/server.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/server.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.o -MF CMakeFiles/server.dir/src/server.o.d -o CMakeFiles/server.dir/src/server.o -c /home/logic/2048Puzzle/src/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/server.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/server.o -MF CMakeFiles/server.dir/src/server.o.d -o CMakeFiles/server.dir/src/server.o -c /home/logic/PZ2048/src/server.cpp
 
 CMakeFiles/server.dir/src/server.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/server.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/2048Puzzle/src/server.cpp > CMakeFiles/server.dir/src/server.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/PZ2048/src/server.cpp > CMakeFiles/server.dir/src/server.i
 
 CMakeFiles/server.dir/src/server.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/server.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/2048Puzzle/src/server.cpp -o CMakeFiles/server.dir/src/server.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/PZ2048/src/server.cpp -o CMakeFiles/server.dir/src/server.s
 
 CMakeFiles/server.dir/src/game_logic.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/game_logic.o: /home/logic/2048Puzzle/src/game_logic.cpp
+CMakeFiles/server.dir/src/game_logic.o: /home/logic/PZ2048/src/game_logic.cpp
 CMakeFiles/server.dir/src/game_logic.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/game_logic.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/game_logic.o -MF CMakeFiles/server.dir/src/game_logic.o.d -o CMakeFiles/server.dir/src/game_logic.o -c /home/logic/2048Puzzle/src/game_logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/game_logic.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/game_logic.o -MF CMakeFiles/server.dir/src/game_logic.o.d -o CMakeFiles/server.dir/src/game_logic.o -c /home/logic/PZ2048/src/game_logic.cpp
 
 CMakeFiles/server.dir/src/game_logic.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/game_logic.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/2048Puzzle/src/game_logic.cpp > CMakeFiles/server.dir/src/game_logic.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/PZ2048/src/game_logic.cpp > CMakeFiles/server.dir/src/game_logic.i
 
 CMakeFiles/server.dir/src/game_logic.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/game_logic.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/2048Puzzle/src/game_logic.cpp -o CMakeFiles/server.dir/src/game_logic.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/PZ2048/src/game_logic.cpp -o CMakeFiles/server.dir/src/game_logic.s
 
 CMakeFiles/server.dir/src/user_logic.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/user_logic.o: /home/logic/2048Puzzle/src/user_logic.cpp
+CMakeFiles/server.dir/src/user_logic.o: /home/logic/PZ2048/src/user_logic.cpp
 CMakeFiles/server.dir/src/user_logic.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/user_logic.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/user_logic.o -MF CMakeFiles/server.dir/src/user_logic.o.d -o CMakeFiles/server.dir/src/user_logic.o -c /home/logic/2048Puzzle/src/user_logic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/user_logic.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/user_logic.o -MF CMakeFiles/server.dir/src/user_logic.o.d -o CMakeFiles/server.dir/src/user_logic.o -c /home/logic/PZ2048/src/user_logic.cpp
 
 CMakeFiles/server.dir/src/user_logic.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/user_logic.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/2048Puzzle/src/user_logic.cpp > CMakeFiles/server.dir/src/user_logic.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/PZ2048/src/user_logic.cpp > CMakeFiles/server.dir/src/user_logic.i
 
 CMakeFiles/server.dir/src/user_logic.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/user_logic.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/2048Puzzle/src/user_logic.cpp -o CMakeFiles/server.dir/src/user_logic.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/PZ2048/src/user_logic.cpp -o CMakeFiles/server.dir/src/user_logic.s
 
 CMakeFiles/server.dir/src/utils.o: CMakeFiles/server.dir/flags.make
-CMakeFiles/server.dir/src/utils.o: /home/logic/2048Puzzle/src/utils.cpp
+CMakeFiles/server.dir/src/utils.o: /home/logic/PZ2048/src/utils.cpp
 CMakeFiles/server.dir/src/utils.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/utils.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/utils.o -MF CMakeFiles/server.dir/src/utils.o.d -o CMakeFiles/server.dir/src/utils.o -c /home/logic/2048Puzzle/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/utils.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/utils.o -MF CMakeFiles/server.dir/src/utils.o.d -o CMakeFiles/server.dir/src/utils.o -c /home/logic/PZ2048/src/utils.cpp
 
 CMakeFiles/server.dir/src/utils.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/utils.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/2048Puzzle/src/utils.cpp > CMakeFiles/server.dir/src/utils.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/logic/PZ2048/src/utils.cpp > CMakeFiles/server.dir/src/utils.i
 
 CMakeFiles/server.dir/src/utils.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/utils.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/2048Puzzle/src/utils.cpp -o CMakeFiles/server.dir/src/utils.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/logic/PZ2048/src/utils.cpp -o CMakeFiles/server.dir/src/utils.s
 
 # Object files for target server
 server_OBJECTS = \
@@ -141,7 +141,7 @@ server: CMakeFiles/server.dir/src/user_logic.o
 server: CMakeFiles/server.dir/src/utils.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/logic/2048Puzzle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/logic/2048Puzzle /home/logic/2048Puzzle /home/logic/2048Puzzle/build /home/logic/2048Puzzle/build /home/logic/2048Puzzle/build/CMakeFiles/server.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/logic/PZ2048/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/logic/PZ2048 /home/logic/PZ2048 /home/logic/PZ2048/build /home/logic/PZ2048/build /home/logic/PZ2048/build/CMakeFiles/server.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/server.dir/depend
 

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/logic/2048Puzzle/src/game_logic.cpp" "CMakeFiles/user-logic.dir/src/game_logic.o" "gcc" "CMakeFiles/user-logic.dir/src/game_logic.o.d"
-  "/home/logic/2048Puzzle/src/user_logic.cpp" "CMakeFiles/user-logic.dir/src/user_logic.o" "gcc" "CMakeFiles/user-logic.dir/src/user_logic.o.d"
-  "/home/logic/2048Puzzle/src/user_logic_test.cpp" "CMakeFiles/user-logic.dir/src/user_logic_test.o" "gcc" "CMakeFiles/user-logic.dir/src/user_logic_test.o.d"
-  "/home/logic/2048Puzzle/src/utils.cpp" "CMakeFiles/user-logic.dir/src/utils.o" "gcc" "CMakeFiles/user-logic.dir/src/utils.o.d"
+  "/home/logic/PZ2048/src/game_logic.cpp" "CMakeFiles/user-logic.dir/src/game_logic.o" "gcc" "CMakeFiles/user-logic.dir/src/game_logic.o.d"
+  "/home/logic/PZ2048/src/user_logic.cpp" "CMakeFiles/user-logic.dir/src/user_logic.o" "gcc" "CMakeFiles/user-logic.dir/src/user_logic.o.d"
+  "/home/logic/PZ2048/src/user_logic_test.cpp" "CMakeFiles/user-logic.dir/src/user_logic_test.o" "gcc" "CMakeFiles/user-logic.dir/src/user_logic_test.o.d"
+  "/home/logic/PZ2048/src/utils.cpp" "CMakeFiles/user-logic.dir/src/utils.o" "gcc" "CMakeFiles/user-logic.dir/src/utils.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

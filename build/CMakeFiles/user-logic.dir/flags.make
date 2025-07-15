@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ASIO_STANDALONE
 
-CXX_INCLUDES = -I/home/logic/2048Puzzle/src/include -I/home/logic/2048Puzzle/third_party/Crow/include -I/home/logic/2048Puzzle/third_party/asio-1.30.2/include
+CXX_INCLUDES = -I/home/logic/PZ2048/src/include -I/home/logic/PZ2048/third_party/Crow/include -I/home/logic/PZ2048/third_party/asio-1.30.2/include
 
 CXX_FLAGS = -std=gnu++17
 

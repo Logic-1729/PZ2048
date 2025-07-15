@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/logic/2048Puzzle
+CMAKE_SOURCE_DIR = /home/logic/PZ2048
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/logic/2048Puzzle/build
+CMAKE_BINARY_DIR = /home/logic/PZ2048/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -85,14 +85,14 @@ clean: CMakeFiles/clean_server.dir/clean
 CMakeFiles/user-logic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/user-logic.dir/build.make CMakeFiles/user-logic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/user-logic.dir/build.make CMakeFiles/user-logic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target user-logic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=6,7,8,9,10 "Built target user-logic"
 .PHONY : CMakeFiles/user-logic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/user-logic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/user-logic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 0
 .PHONY : CMakeFiles/user-logic.dir/rule
 
 # Convenience name for target.
@@ -111,14 +111,14 @@ CMakeFiles/user-logic.dir/clean:
 CMakeFiles/server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target server"
 .PHONY : CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 0
 .PHONY : CMakeFiles/server.dir/rule
 
 # Convenience name for target.
@@ -137,14 +137,14 @@ CMakeFiles/server.dir/clean:
 CMakeFiles/run_server.dir/all: CMakeFiles/server.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_server.dir/build.make CMakeFiles/run_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_server.dir/build.make CMakeFiles/run_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num= "Built target run_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num= "Built target run_server"
 .PHONY : CMakeFiles/run_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_server.dir/rule
 
 # Convenience name for target.
@@ -163,14 +163,14 @@ CMakeFiles/run_server.dir/clean:
 CMakeFiles/clean_server.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_server.dir/build.make CMakeFiles/clean_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/clean_server.dir/build.make CMakeFiles/clean_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/2048Puzzle/build/CMakeFiles --progress-num= "Built target clean_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/logic/PZ2048/build/CMakeFiles --progress-num= "Built target clean_server"
 .PHONY : CMakeFiles/clean_server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clean_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/2048Puzzle/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/logic/PZ2048/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_server.dir/rule
 
 # Convenience name for target.

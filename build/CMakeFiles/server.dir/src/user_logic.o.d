@@ -1,7 +1,7 @@
 CMakeFiles/server.dir/src/user_logic.o: \
- /home/logic/2048Puzzle/src/user_logic.cpp /usr/include/stdc-predef.h \
- /home/logic/2048Puzzle/src/include/user_logic.h \
- /home/logic/2048Puzzle/src/include/utils.h /usr/include/c++/13/utility \
+ /home/logic/PZ2048/src/user_logic.cpp /usr/include/stdc-predef.h \
+ /home/logic/PZ2048/src/include/user_logic.h \
+ /home/logic/PZ2048/src/include/utils.h /usr/include/c++/13/utility \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -17,8 +17,8 @@ CMakeFiles/server.dir/src/user_logic.o: \
  /usr/include/c++/13/bits/stl_pair.h /usr/include/c++/13/type_traits \
  /usr/include/c++/13/bits/move.h /usr/include/c++/13/bits/utility.h \
  /usr/include/c++/13/initializer_list \
- /home/logic/2048Puzzle/src/include/game_logic.h \
- /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
+ /home/logic/PZ2048/src/include/game_logic.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
@@ -122,4 +122,4 @@ CMakeFiles/server.dir/src/user_logic.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/logic/2048Puzzle/src/include/utils.h
+ /home/logic/PZ2048/src/include/utils.h

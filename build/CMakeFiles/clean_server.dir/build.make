@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/logic/2048Puzzle
+CMAKE_SOURCE_DIR = /home/logic/PZ2048
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/logic/2048Puzzle/build
+CMAKE_BINARY_DIR = /home/logic/PZ2048/build
 
 # Utility rule file for clean_server.
 
@@ -82,6 +82,6 @@ CMakeFiles/clean_server.dir/clean:
 .PHONY : CMakeFiles/clean_server.dir/clean
 
 CMakeFiles/clean_server.dir/depend:
-	cd /home/logic/2048Puzzle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/logic/2048Puzzle /home/logic/2048Puzzle /home/logic/2048Puzzle/build /home/logic/2048Puzzle/build /home/logic/2048Puzzle/build/CMakeFiles/clean_server.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/logic/PZ2048/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/logic/PZ2048 /home/logic/PZ2048 /home/logic/PZ2048/build /home/logic/PZ2048/build /home/logic/PZ2048/build/CMakeFiles/clean_server.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/clean_server.dir/depend
 

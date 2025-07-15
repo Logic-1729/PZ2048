@@ -1,5 +1,5 @@
-CMakeFiles/server.dir/src/utils.o: /home/logic/2048Puzzle/src/utils.cpp \
- /usr/include/stdc-predef.h /home/logic/2048Puzzle/src/include/utils.h \
+CMakeFiles/server.dir/src/utils.o: /home/logic/PZ2048/src/utils.cpp \
+ /usr/include/stdc-predef.h /home/logic/PZ2048/src/include/utils.h \
  /usr/include/c++/13/utility \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

@@ -1,4 +1,4 @@
-# Install script for directory: /home/logic/2048Puzzle
+# Install script for directory: /home/logic/PZ2048
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/logic/2048Puzzle/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/logic/PZ2048/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

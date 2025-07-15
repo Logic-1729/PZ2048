@@ -161,37 +161,37 @@ inline uint GetCurrentSeed() {
  * value: 90% for 2, 10% for 4.
  */
 inline std::pair<std::pair<int, int>, int> TryGenerateTile() {
-  std::vector<std::pair<int, int>> slot_list;
-  int row_num = GetRows(), col_num = GetCols();
-  for(int i = 0; i < row_num; i++)
+    std::vector<std::pair<int, int>> slot_list;
+    int row_num = GetRows(), col_num = GetCols();
+    for(int i = 0; i < row_num; i++)
     for(int j = 0; j < col_num; j++)
-      if(GetTile(i, j) == 0)
-        slot_list.emplace_back(i, j);
-  if(slot_list.empty())
-    return {{-1, -1}, -1};
-  auto pos = rand(), sig = rand();
-  pos %= slot_list.size();
-  int row = slot_list[pos].first, col = slot_list[pos].second;
-  sig %= 10;
-  int val = (sig == 0 ? 4 : 2);
-  SetTile(row, col, val);
-  return {{row, col}, val};
+        if(GetTile(i, j) == 0)
+            slot_list.emplace_back(i, j);
+        if(slot_list.empty())
+            return {{-1, -1}, -1};
+    auto pos = rand(), sig = rand();
+    pos %= slot_list.size();
+    int row = slot_list[pos].first, col = slot_list[pos].second;
+    sig %= 10;
+    int val = (sig == 0 ? 4 : 2);
+    SetTile(row, col, val);
+    return {{row, col}, val};
 }
 
 /**
  * @return The identity string of the board status.
  */
 inline std::string SerializeBoard() {
-  int row_num = GetRows(), col_num = GetCols();
-  std::string res;
-  for(int i = 0; i < row_num; i++) {
-    for(int j = 0; j < col_num; j++) {
-      res += std::to_string(GetTile(i, j));
-      if(j != col_num - 1) res += ' ';
+    int row_num = GetRows(), col_num = GetCols();
+    std::string res;
+    for(int i = 0; i < row_num; i++) {
+        for(int j = 0; j < col_num; j++) {
+            res += std::to_string(GetTile(i, j));
+            if(j != col_num - 1) res += ' ';
+        }
+        if(i != row_num - 1) res += '\n';
     }
-    if(i != row_num - 1) res += '\n';
-  }
-  return res;
+    return res;
 }
 }
 

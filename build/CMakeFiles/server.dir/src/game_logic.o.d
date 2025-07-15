@@ -1,7 +1,7 @@
 CMakeFiles/server.dir/src/game_logic.o: \
- /home/logic/2048Puzzle/src/game_logic.cpp /usr/include/stdc-predef.h \
- /home/logic/2048Puzzle/src/include/game_logic.h \
- /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
+ /home/logic/PZ2048/src/game_logic.cpp /usr/include/stdc-predef.h \
+ /home/logic/PZ2048/src/include/game_logic.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -119,7 +119,7 @@ CMakeFiles/server.dir/src/game_logic.o: \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/logic/2048Puzzle/src/include/utils.h /usr/include/c++/13/utility \
+ /home/logic/PZ2048/src/include/utils.h /usr/include/c++/13/utility \
  /usr/include/c++/13/bits/stl_relops.h /usr/include/c++/13/iomanip \
  /usr/include/c++/13/bits/ios_base.h /usr/include/c++/13/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
