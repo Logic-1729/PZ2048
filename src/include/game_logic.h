@@ -1,6 +1,7 @@
 #ifndef PUZZLE_2048_GAME_LOGIC_H
 #define PUZZLE_2048_GAME_LOGIC_H
 
+#include <iostream>
 #include <string>
 #include <vector>
 

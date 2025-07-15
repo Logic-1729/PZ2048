@@ -378,10 +378,10 @@
 </div>
 
 <div id="sequence-control-group">
-    <input type="text" id="sequenceInput" placeholder="Enter wsadz sequence (e.g., wwssdaz)">
+    <input type="text" id="sequenceInput" placeholder="Paste wsadz sequence (e.g., wwssdaz)">
     <div id="delay-control-group">
         <label for="sequenceDelayInput">Step Delay (ms):</label>
-        <input type="number" id="sequenceDelayInput" value="200" min="50">
+        <input type="number" id="sequenceDelayInput" value="200" min="20">
     </div>
     <button id="playSequenceButton">Play Sequence</button>
 </div>
@@ -530,6 +530,10 @@
     }
 
     async function handleKeyPress(event) {
+        const targetTagName = event.target.tagName.toLowerCase();
+        if (targetTagName === 'input' || targetTagName === 'textarea' || targetTagName === 'select') {
+            return;
+        }
         let direction = '';
         switch (event.key) {
             case 'w':
@@ -578,10 +582,28 @@
             const data = await response.json();
             console.log("Operation result:", data);
 
+            let dir_info = "";
+            switch (direction) {
+                case 'w':
+                    dir_info = "upward";
+                    break;
+                case 'a':
+                    dir_info = "leftward";
+                    break;
+                case 's':
+                    dir_info = "downward";
+                    break;
+                case 'd':
+                    dir_info = "rightward";
+                    break;
+                default:
+                    console.warn("Invalid direction in sendMove");
+            }
+
             if (data.moved) {
-                messageDiv.textContent = `Moved ${direction.toUpperCase()}.`;
+                messageDiv.textContent = `Moved ${dir_info}.`;
             } else {
-                messageDiv.textContent = `Cannot move ${direction.toUpperCase()}.`;
+                messageDiv.textContent = `Cannot move ${dir_info}.`;
             }
 
             updateDisplayFromData(data.board, data.score, data.steps, data.stuck, data.reached_2048, data.rows, data.cols, data.current_seed, data.target_tile);
@@ -607,7 +629,7 @@
         }
 
         const delay = parseInt(sequenceDelayInput.value);
-        if (isNaN(delay) || delay < 50) {
+        if (isNaN(delay) || delay < 20) {
             messageDiv.textContent = "Invalid delay. Using default 200ms.";
             sequenceDelayInput.value = 200; // Reset to default if invalid
         }

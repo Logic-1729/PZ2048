@@ -16,24 +16,14 @@ namespace PZ2048 {
 // Don't try to use extern variables from user_logic.cpp. You're not supposed to communicate through this way.
 // After all, the game logic on the online judger won't contain extern variables same as yours.
 
-inline int rows, cols, steps, score, prev_steps, prev_score;
-inline int target_tile = 2048; // 默认目标
-inline uint current_seed = 0;
-inline std::vector<std::vector<int>> board, prev_board;
-inline bool prev_valid;
+static int rows, cols, steps, score, prev_steps, prev_score, puzzle_target;
+static std::vector<std::vector<int>> board, prev_board;
+static bool prev_valid;
 
 // You are free to add helper functions.
 
 void Start(int row_num, int col_num, int target, uint game_seed) {
   /** implement here. **/
-}
-
-void SetTarget(int target) {
-  target_tile = target;
-}
-
-int GetTarget() {
-  return target_tile;
 }
 
 std::pair<int, int> EndGame() {
@@ -46,11 +36,11 @@ int GetRows() { return rows; }
 int GetCols() { return cols; }
 
 bool TryRun(char dir) {
-  /** implement here. **/
+  /** implementation here **/
 }
 
 bool Undo() {
-  /** implement here. **/
+ /** implement here. **/
 }
 
 void SetTile(int row_index, int col_index, int value) {
@@ -65,6 +55,8 @@ int Score() { return score; }
 
 int Steps() { return steps; }
 
+int GetTarget() { return puzzle_target; }
+
 bool HasReachedTarget() {
   /** implement here. **/
 }
@@ -74,7 +66,7 @@ bool Stuck() {
 }
 
 void PrintBoard() {
-  /** implement here. **/
+ /** implement here. **/
 }
 
-} // namespace PZ2048
+}

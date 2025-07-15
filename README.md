@@ -42,6 +42,7 @@ PZ2048/
 ├── README.md                # 项目说明
 ├── src/                     # 源代码
 │   ├── game_logic.cpp       # 游戏核心逻辑
+│   ├── game_logic_test.cpp  # 游戏逻辑测试
 │   ├── user_logic.cpp       # 用户相关逻辑
 │   ├── user_logic_test.cpp  # 用户逻辑测试
 │   ├── server.cpp           # 服务端入口
@@ -52,9 +53,9 @@ PZ2048/
 │       ├── user_logic.h
 │       └── utils.h
 ├── testcase/                # 测试用例输入输出
-│   ├── 1.in / 1.ans
-│   ├── 2.in / 2.ans
-│   └── ...
+│   ├── input
+│   ├── output
+│   └── ans
 ├── third_party/             # 第三方库
 │   ├── asio-1.30.2/         # ASIO 网络库
 │   └── Crow/                # Crow Web 框架
@@ -159,12 +160,31 @@ python3 -m http.server 8000
 
 然后打开浏览器，输入网址 `python3 -m http.server 8000`,你就能够看到你的程序在网页端生成的效果；可以通过这种方式对你的程序直观进行调试与游玩。
 
-同时我们在下发的`testcase`文件中提供了部分样例供各位调试.
+同时我们在下发的`testcase`文件中提供了部分样例供各位调试,请你在完成 `game_logic.cpp` 后，打开 wsl 的根目录，依次执行以下命令：
+
+```
+cd PZ2048          # 如果当前目录已在PZ2048下可跳过
+rm -rf build/
+mkdir build
+g++ -std=c++17 -I./src/include -o build/game_logic_test src/game_logic_test.cpp src/game_logic.cpp src/utils.cpp && ./build/game_logic_test
+```
+然后在终端将会出现形如下方的界面：
+```
+Case 1: Output matches, test passed!
+Case 2: Output matches, test passed!
+Case 3: Output matches, test passed!
+Case 4: Output matches, test passed!
+Case 5: Output matches, test passed!
+All cases passed!
+```
+------------------------------------------------------------------------------
 
 对于 Extension 部分而言，请你在完成 `user_logic.cpp` 后，打开 wsl 的根目录，依次执行以下命令：
 
 ```
 cd PZ2048          # 如果当前目录已在PZ2048下可跳过
+rm -rf build/
+mkdir build
 g++ src/user_logic_test.cpp src/user_logic.cpp src/game_logic.cpp src/utils.cpp -o build/user_logic_test && ./build/user_logic_test
 ```
 
