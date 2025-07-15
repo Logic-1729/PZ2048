@@ -34,10 +34,12 @@ void check_target(int &target) {
 
 int main() {
   bool all_passed = true;
+  // 获取项目根目录（假定可执行文件在 build/ 下，项目根目录为其上一级）
+  std::string root_path = "..";
   for (int case_id = 1; case_id <= 5; ++case_id) {
-    std::string in_path = "testcase/input/" + std::to_string(case_id) + ".in";
-    std::string out_path = "testcase/output/" + std::to_string(case_id) + ".out";
-    std::string ans_path = "testcase/ans/" + std::to_string(case_id) + ".ans";
+    std::string in_path = "../testcase/input/" + std::to_string(case_id) + ".in";
+    std::string out_path = "../testcase/output/" + std::to_string(case_id) + ".out";
+    std::string ans_path = "../testcase/ans/" + std::to_string(case_id) + ".ans";
     std::ifstream fin(in_path);
     std::ofstream fout(out_path);
     if (!fin.is_open() || !fout.is_open()) {

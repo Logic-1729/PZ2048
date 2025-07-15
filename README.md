@@ -108,10 +108,13 @@ PZ2048/
 
 ```
 cd PZ2048         # 如果当前目录已在PZ2048 下可跳过
-rm -rf build/
-mkdir build
-cd build
+rm -rf build/ && mkdir build && cd build
 cmake ..
+```
+
+到这里位置编译就完成了,下面继续运行：
+
+```
 make server
 ./server
 ```
@@ -129,10 +132,11 @@ python3 -m http.server 8000
 同时我们在下发的`testcase`文件中提供了部分样例供各位调试,请你在完成 `game_logic.cpp` 后，打开 wsl 的根目录，依次执行以下命令：
 
 ```
-cd PZ2048          # 如果当前目录已在PZ2048下可跳过
-rm -rf build/
-mkdir build
-g++ -std=c++17 -I./src/include -o build/game_logic_test src/game_logic_test.cpp src/game_logic.cpp src/utils.cpp && ./build/game_logic_test
+cd PZ2048         # 如果当前目录已在PZ2048 下可跳过
+rm -rf build/ && mkdir build && cd build
+cmake ..
+make game_logic_test
+./game_logic_test
 ```
 然后在终端将会出现形如下方的界面：
 ```
@@ -149,9 +153,10 @@ All cases passed!
 
 ```
 cd PZ2048          # 如果当前目录已在PZ2048下可跳过
-rm -rf build/
-mkdir build
-g++ src/user_logic_test.cpp src/user_logic.cpp src/game_logic.cpp src/utils.cpp -o build/user_logic_test && ./build/user_logic_test
+rm -rf build/ && mkdir build && cd build
+cmake ..
+make user_logic_test
+./user_logic_test
 ```
 
 然后在终端将会出现形如下方的界面：
@@ -189,7 +194,7 @@ $$
 
 * game_logic.cpp 中函数的具体实现细节
 * 项目的框架结构布置
-* git 与 linux 命令行的实践操作
+* git 与 linux 命令行的实践操作以及部分命令的含义
 
 理论上的总分是115pts，但是你的得分上限为 105pts，你在 Extension 部分溢出的分数直接算入大作业总分。
 
