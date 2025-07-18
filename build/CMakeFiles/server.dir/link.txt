@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/server.dir/src/server.cpp.o CMakeFiles/server.dir/src/game_logic.cpp.o CMakeFiles/server.dir/src/user_logic.cpp.o CMakeFiles/server.dir/src/utils.cpp.o -o server 
