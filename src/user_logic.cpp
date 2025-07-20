@@ -3,6 +3,13 @@
 
 #include "include/utils.h"
 #include "include/game_logic.h"
+//WARNING: DO NOT DELETE THE LINES BELOW!
+//WHEN YOU PUT YOUR CODE TO ACMOJ, YOU WOULD DELETE THE LINE 4-5 AND USE LINE 8-12 INSTEAD 
+//#include "game_logic.h"
+//#include "game_logic.cpp"
+//#include "utils.h"
+//#include "utils.cpp"
+//#include "user_logic.h"
 
 namespace PZ2048 {
 
