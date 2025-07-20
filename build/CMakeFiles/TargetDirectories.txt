@@ -1,7 +1,0 @@
-/home/logic/PZ2048/build/CMakeFiles/game_logic_test.dir
-/home/logic/PZ2048/build/CMakeFiles/user_logic_test.dir
-/home/logic/PZ2048/build/CMakeFiles/server.dir
-/home/logic/PZ2048/build/CMakeFiles/run_server.dir
-/home/logic/PZ2048/build/CMakeFiles/clean_server.dir
-/home/logic/PZ2048/build/CMakeFiles/edit_cache.dir
-/home/logic/PZ2048/build/CMakeFiles/rebuild_cache.dir

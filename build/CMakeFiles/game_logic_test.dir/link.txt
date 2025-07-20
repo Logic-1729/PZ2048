@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/game_logic_test.dir/src/game_logic_test.cpp.o CMakeFiles/game_logic_test.dir/src/game_logic.cpp.o CMakeFiles/game_logic_test.dir/src/utils.cpp.o -o game_logic_test 
