@@ -74,6 +74,8 @@ bool Stuck() {
 void PrintBoard() {
     /** implement here. **/
     /** Hint: You MUST USE std:cout **/
+    /** Hint: When you print the board, you have to use 1 space to split the number**/
+    /** Hint: More Specifically, you have to open *.ans to check whether your output format is correct**/
 }
 
 }
