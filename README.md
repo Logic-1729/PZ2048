@@ -83,7 +83,7 @@ PZ2048/
 3. Expectimax 算法
 ```
 
-这些做法完全不唯一，在此我们提供我们实现过的一些方法供各位参考 ，请点击 [Here](https://notes.sjtu.edu.cn/AT7a_9C7SF2fpmOflkq3DQ?both)。当然我们更希望大家能够自行查阅互联网对自己的函数进行改进，请在修改完你的函数后，在 wsl 中运行 ``user_logic_test.cpp`` 来得到你的 Average Score与得分，最后请在 ACMOJ 上进行打榜测试，请你修改你的函数来获取更高的得分！
+这些做法完全不唯一，在此我们提供我们实现过的一些方法供各位参考 ，请点击 [Here](https://notes.sjtu.edu.cn/AT7a_9C7SF2fpmOflkq3DQ?both)。当然我们更希望大家能够自行查阅互联网对自己的函数进行改进,比如参考[Here](https://stackoverflow.com/questions/22342854/what-is-the-optimal-algorithm-for-the-game-2048/22389702#22389702)，请在修改完你的函数后，在 wsl 中运行 ``user_logic_test.cpp`` 来得到你的 Average Score与得分，最后请在 ACMOJ 上进行打榜测试，请你修改你的函数来获取更高的得分！
 
 **WARNING:** 在此期间，不允许使用撤销操作，一旦被发现，本部分分数将作零分处理。
 
