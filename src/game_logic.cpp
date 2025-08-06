@@ -41,8 +41,8 @@ bool TryRun(char dir) {
 
 bool Undo() {
     /** implement here. **/
-    /**Sorry for our mistake, in the process you just need to undo the operation but not the score**/
-    /**for example we have 0 0 0 4 4pts, after we undo, we get 2 0 0 2 4pts**/
+    /**in the process you need to undo the operation and both the score**/
+    /**for example we have 0 0 0 4 4pts from 2 0 0 2 0pts, after we undo, we get 2 0 0 2 0pts**/
 }
 
 void SetTile(int row_index, int col_index, int value) {
