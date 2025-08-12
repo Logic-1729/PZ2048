@@ -171,7 +171,7 @@ Score by formula: 57
 
 ### 提交方式
 
-请各位自行测试无误后将`game_logic.cpp`和`user_logic.cpp`分别提交到 [Basic]([https://2048game.com/](https://acm.sjtu.edu.cn/OnlineJudge/problem/2783)) 与 [Extension]([https://2048game.com/](https://acm.sjtu.edu.cn/OnlineJudge/problem/2784)) 即可.
+请各位自行测试无误后将`game_logic.cpp`和`user_logic.cpp`分别提交到 [Basic](https://acm.sjtu.edu.cn/OnlineJudge/problem/2783) 与 [Extension](https://acm.sjtu.edu.cn/OnlineJudge/problem/2784) 即可.
 
 ### 评分规则
 
